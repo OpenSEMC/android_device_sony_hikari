@@ -14,9 +14,6 @@
 # limitations under the License.
 #
 
-# Inherit the proprietary counterpart
-$(call inherit-product-if-exists, vendor/sony/hikari/hikari-vendor.mk)
-
 DEVICE_PACKAGE_OVERLAYS += device/sony/hikari/overlay
 
 # Inherit the fuji-common definitions
