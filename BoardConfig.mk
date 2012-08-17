@@ -7,7 +7,7 @@ USE_CAMERA_STUB := true
 -include device/sony/fuji-common/BoardConfigCommon.mk
 
 TARGET_KERNEL_SOURCE := kernel/sony/msm8660
-TARGET_KERNEL_CONFIG := cyanogen_hikari_defconfig
+TARGET_KERNEL_CONFIG := cyanogen_hikari_row_defconfig
 #TARGET_PREBUILT_KERNEL := device/sony/hikari/prebuilt/kernel
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
 
