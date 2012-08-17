@@ -28,8 +28,8 @@ etc/fast-dormancy/fd_ext_conf.txt
 etc/fast-dormancy/fd_int_conf.txt
 etc/firmware/BCM4330.hcd
 etc/firmware/RPM.bin
-etc/firmware/bq27520_fw-0507_filever-0116_proj-nozo_golden.bqfs
-etc/firmware/bq27520_fw-0507_filever-0116_proj-nozo_golden.dffs
+etc/firmware/bq27520_fw-0507_filever-0011_proj-hika_golden.bqfs
+etc/firmware/bq27520_fw-0507_filever-0011_proj-hika_golden.dffs
 etc/firmware/dsps_fluid.b00
 etc/firmware/dsps_fluid.b01
 etc/firmware/dsps_fluid.b02
@@ -58,11 +58,8 @@ etc/firmware/q6.b05
 etc/firmware/q6.b06
 etc/firmware/q6.b07
 etc/firmware/q6.mdt
-etc/firmware/touch_module_id_0x11.img
-etc/firmware/touch_module_id_0x12.img
-etc/firmware/touch_module_id_0x16.img
-etc/firmware/touch_module_id_0x1b.img
-etc/firmware/touch_module_id_0x1c.img
+etc/firmware/touch_module_id_0x13.img
+etc/firmware/touch_module_id_0x1d.img
 etc/firmware/tzapps.b00
 etc/firmware/tzapps.b01
 etc/firmware/tzapps.b02
