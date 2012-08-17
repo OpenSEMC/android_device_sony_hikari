@@ -138,8 +138,8 @@ lib/libqdp.so
 lib/libqmi.so
 lib/libqmiservices.so
 lib/libqueue.so
-lib/libril.so
 lib/libril-qc-qmi-1.so
+lib/libril.so
 lib/libs1sl.so
 lib/libsc-a2xx.so
 lib/libta.so
