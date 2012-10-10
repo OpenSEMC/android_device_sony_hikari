@@ -6,7 +6,7 @@ USE_CAMERA_STUB := true
 #inherit from the common fuji definitions
 -include device/sony/fuji-common/BoardConfigCommon.mk
 
-TARGET_KERNEL_CONFIG := cyanogen_hikari_row_defconfig
+TARGET_KERNEL_CONFIG := cyanogen_fuji_hikari_row_defconfig
 
 # Partition information
 BOARD_VOLD_MAX_PARTITIONS := 16
