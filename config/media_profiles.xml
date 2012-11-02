@@ -98,7 +98,6 @@
     <CamcorderProfiles cameraId="0">
         <!--
         Profiles for the back camera
-        <!--
         -->
         <!--
         <EncoderProfile quality="1080p" fileFormat="mp4" duration="60">
