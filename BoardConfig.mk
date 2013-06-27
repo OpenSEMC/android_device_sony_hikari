@@ -28,7 +28,7 @@ USE_CAMERA_STUB := true
 # inherit from Sony qcom-common
 -include device/sony/qcom-common/BoardConfigCommon.mk
 
-TARGET_KERNEL_CONFIG := cyanogen_fuji_hikari_row_defconfig
+TARGET_KERNEL_CONFIG := opensemc_fuji_hikari_row_defconfig
 
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/hikari/bluetooth
 
