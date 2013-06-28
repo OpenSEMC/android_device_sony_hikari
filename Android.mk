@@ -14,8 +14,16 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := $(call my-dir)
+#
+# Hikari CFX hierarchy:
+# 1 Android.mk (this)
+# 2 ^cfx.mk
+# 3 ^full_nozomi.mk
+# 4 ^hikari.mk
+#
+
+#LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),hikari)
-    include $(call first-makefiles-under,$(LOCAL_PATH))
+    $(call inherit-product, device/sony/hikari/cfx.mk)
 endif
