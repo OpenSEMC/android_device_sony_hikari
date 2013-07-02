@@ -1,2 +1,3 @@
-add_lunch_combo cm_hikari-eng
-add_lunch_combo cm_hikari-userdebug
+add_lunch_combo full_hikari-eng
+add_lunch_combo full_hikari-userdebug
+add_lunch_combo full_hikari-codefirex
