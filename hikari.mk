@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Inherit the fuji-common definitions
+$(call inherit-product, device/sony/fuji-common/fuji.mk)
+
 DEVICE_PACKAGE_OVERLAYS += device/sony/hikari/overlay
 
 # These are the hardware-specific features
@@ -65,4 +68,3 @@ $(call inherit-product-if-exists, vendor/sony/hikari/hikari-vendor.mk)
 # Wifi
 BOARD_WLAN_DEVICE_REV := bcm4330_b2
 WIFI_BAND             := 802_11_ABG
-$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4330/device-bcm.mk)
