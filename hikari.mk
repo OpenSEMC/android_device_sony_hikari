@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Inherit the fuji-common definitions
+$(call inherit-product, device/sony/fuji-common/fuji.mk)
+
 DEVICE_PACKAGE_OVERLAYS += device/sony/hikari/overlay
 
 # These are the hardware-specific features
