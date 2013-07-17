@@ -14,16 +14,8 @@
 # limitations under the License.
 #
 
-#
-# Hikari CFX hierarchy:
-# 1 Android.mk (this)
-# 2 ^cfx.mk
-# 3 ^full_nozomi.mk
-# 4 ^hikari.mk
-#
-
-#LOCAL_PATH := $(call my-dir)
+LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),hikari)
-    $(call inherit-product, device/sony/hikari/cfx.mk)
+    include $(call all-makefiles-under,$(LOCAL_PATH))
 endif
