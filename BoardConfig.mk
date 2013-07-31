@@ -22,12 +22,6 @@ USE_CAMERA_STUB := true
 #inherit from the common fuji definitions
 -include device/sony/fuji-common/BoardConfigCommon.mk
 
-# inherit from Sony common
--include device/sony/common/BoardConfigCommon.mk
-
-# inherit from Sony qcom-common
--include device/sony/qcom-common/BoardConfigCommon.mk
-
 TARGET_KERNEL_CONFIG := opensemc_fuji_hikari_row_defconfig
 
 # Sony-supplied broadcom wlan module
@@ -45,7 +39,13 @@ BOARD_BOOTIMAGE_PARTITION_SIZE := 0x01400000
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x01400000
 
 # Recovery
+<<<<<<< HEAD
 TARGET_RECOVERY_INITRC := device/sony/hikari/recovery/init.rc
+=======
+RECOVERY_FSTAB_VERSION := 2
+TARGET_RECOVERY_FSTAB := device/sony/nozomi/config/fstab.semc
+TARGET_RECOVERY_INITRC := device/sony/nozomi/recovery/init.rc
+>>>>>>> b88c2e9... vold: initial MR2 setup
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1056964608
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 2147483648
 BOARD_FLASH_BLOCK_SIZE := 131072
