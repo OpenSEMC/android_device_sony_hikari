@@ -39,13 +39,9 @@ BOARD_BOOTIMAGE_PARTITION_SIZE := 0x01400000
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x01400000
 
 # Recovery
-<<<<<<< HEAD
 TARGET_RECOVERY_INITRC := device/sony/hikari/recovery/init.rc
-=======
 RECOVERY_FSTAB_VERSION := 2
-TARGET_RECOVERY_FSTAB := device/sony/nozomi/config/fstab.semc
-TARGET_RECOVERY_INITRC := device/sony/nozomi/recovery/init.rc
->>>>>>> b88c2e9... vold: initial MR2 setup
+TARGET_RECOVERY_FSTAB := device/sony/hikari/config/fstab.semc
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1056964608
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 2147483648
 BOARD_FLASH_BLOCK_SIZE := 131072
