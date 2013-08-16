@@ -22,12 +22,6 @@ USE_CAMERA_STUB := true
 #inherit from the common fuji definitions
 -include device/sony/fuji-common/BoardConfigCommon.mk
 
-# inherit from Sony common
--include device/sony/common/BoardConfigCommon.mk
-
-# inherit from Sony qcom-common
--include device/sony/qcom-common/BoardConfigCommon.mk
-
 TARGET_KERNEL_CONFIG := opensemc_fuji_hikari_row_defconfig
 
 # Sony-supplied broadcom wlan module
@@ -46,6 +40,8 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x01400000
 
 # Recovery
 TARGET_RECOVERY_INITRC := device/sony/hikari/recovery/init.rc
+RECOVERY_FSTAB_VERSION := 2
+TARGET_RECOVERY_FSTAB := device/sony/hikari/config/fstab.semc
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1056964608
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 2147483648
 BOARD_FLASH_BLOCK_SIZE := 131072
