@@ -62,6 +62,10 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
+# TWRP
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/config/twrp.fstab:recovery/root/etc/twrp.fstab
+ 
 $(call inherit-product-if-exists, vendor/sony/hikari/hikari-vendor.mk)
 
 # Wifi
