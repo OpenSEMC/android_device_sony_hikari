@@ -43,9 +43,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/config/fstab.semc:root/fstab.semc
 
-PRODUCT_COPY_FILES += \
-   $(LOCAL_PATH)/config/media_profiles.xml:system/etc/media_profiles.xml
-
 # Device specific part for two-stage boot
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/recovery/bootrec-device:recovery/bootrec-device
@@ -61,6 +58,12 @@ PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/config/simple_remote.kl:system/usr/keylayout/simple_remote.kl
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
+
+# TWRP
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/config/twrp.fstab:recovery/root/etc/twrp.fstab
+ 
+$(call inherit-product-if-exists, vendor/sony/hikari/hikari-vendor.mk)
 
 # Wifi
 BOARD_WLAN_DEVICE_REV := bcm4330_b2
