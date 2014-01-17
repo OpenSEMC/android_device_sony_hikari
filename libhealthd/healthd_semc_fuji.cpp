@@ -22,7 +22,7 @@ healthd_board_init(struct healthd_config *config)
 {
     // read from bq24185/bq27520/chargalg/semc_battery_data sys interfaces
     config->batteryCapacityPath    = "/sys/class/power_supply/bq27520/capacity";
-    config->batteryStatusPath      = "/sys/class/power_supply/bq24185/status";
+    config->batteryStatusPath      = "/sys/class/power_supply/bq24160/status";
     config->batteryVoltagePath     = "/sys/class/power_supply/bq27520/voltage_now";
     config->batteryCurrentNowPath  = "/sys/class/power_supply/bq27520/current_now";
     config->batteryPresentPath     = "/sys/class/power_supply/bq27520/present";
