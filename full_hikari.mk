@@ -27,7 +27,7 @@ $(call inherit-product, vendor/cfx/config/common_full_phone.mk)
 # Inherit CFX common GSM stuff.
 $(call inherit-product, vendor/cfx/config/gsm.mk)
 
-# Inherit from nozomi device
+# Inherit from hikari device
 $(call inherit-product, device/sony/hikari/hikari.mk)
 
 # Set those variables here to overwrite the inherited values.
